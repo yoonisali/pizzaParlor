@@ -22,22 +22,22 @@ Pizza.prototype.sizePrice = function () {
   // Adds 6$ for each topping
 Pizza.prototype.toppingPrice = function () {
   let price = this.price;
-  if (toppings.includes("chicken")) {
+  if (this.toppings.includes("chicken")) {
     price += 6;
   }
-  if (toppings.includes("pineapples")) {
+  if (this.toppings.includes("pineapples")) {
     price += 6;
   }
-  if (toppings.includes("cheese")) {
+  if (this.toppings.includes("cheese")) {
     price += 6;
   }
-  if (toppings.includes("motor-oil")) {
+  if (this.toppings.includes("motor-oil")) {
     price += 6;
   }
-  if (toppings.includes("eggs")) {
+  if (this.toppings.includes("eggs")) {
     price += 6;
   }
-  if (toppings.includes("fish")) {
+  if (this.toppings.includes("fish")) {
     price += 6;
   }
   return price;
@@ -50,3 +50,7 @@ Pizza.prototype.addTopping = function (topping) {
 // UI Logic
 
 // Console Testing
+let myPizza = new Pizza("medium", ["eggs", "cheese", "fish"])
+console.log(myPizza.sizePrice());
+console.log(myPizza.toppingPrice());
+console.log()
