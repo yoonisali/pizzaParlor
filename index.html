@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+  <title>Pizza Parlor</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to Yoonis's Professional Passionate Poisonous Pizza Parlor!</h1>
+    </div>
+
+    <form id="pizzaShop">
+      <div class="form-group">
+        <label for="name">Enter a Name:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="phone-number">Phone Number:</label>
+        <input type="text" id="phone-number">
+      </div>
+      <div class="form-group">
+        <h3>Pizza Size:</h3>
+        <input type="checkbox" name="size" value="small"> Small $12
+        <br>
+        <br>
+        <input type="checkbox" name="size" value="medium"> Medium $14
+        <br>
+        <br>
+        <input type="checkbox" name="size" value="large"> Large $16
+      </div>
+      <div class="form-group">
+        <h3>Pizza Toppings</h3>
+        <p>2$ each</p>
+        <input type="checkbox" name="toppings" value="chicken"> Grilled Chicken
+        <br>
+        <input type="checkbox" name="toppings" value="pineapples"> Pineapples
+        <br>
+        <input type="checkbox" name="toppings" value="motor-oil"> Motor Oil
+        <br>
+        <input type="checkbox" name="toppings" value="eggs"> Eggs
+        <br>
+        <input type="checkbox" name="toppings" value="eggs"> Fish eyes
+        <br>
+      </div>
+      <button type="submit" class="btn btn-light" id="order">Place your order!</button>
+    </form>
+  </div>
+</body>
+
+</html>
