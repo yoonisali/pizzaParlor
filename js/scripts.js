@@ -1,4 +1,4 @@
-// Business Logic\
+// Business Logic
 
 // Pizza
 function Pizza(size, toppings) {
@@ -50,7 +50,12 @@ Pizza.prototype.addTopping = function (topping) {
 // UI Logic
 
 // Console Testing
-let myPizza = new Pizza("medium", ["eggs", "cheese", "fish"])
-console.log(myPizza.sizePrice());
-console.log(myPizza.toppingPrice());
-console.log()
+let onePizza = new Pizza("small", ["eggs"])
+let twoPizza = new Pizza("medium", ["motor-oil", "chicken"])
+let threePizza = new Pizza("large", ["chicken", "pineapples", "cheese"])
+console.log(onePizza.sizePrice());
+console.log(twoPizza.sizePrice());
+console.log(threePizza.sizePrice());
+console.log(onePizza.toppingPrice());
+console.log(twoPizza.toppingPrice());
+console.log(threePizza.toppingPrice());
