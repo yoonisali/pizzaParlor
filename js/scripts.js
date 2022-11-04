@@ -48,6 +48,16 @@ Pizza.prototype.addTopping = function (topping) {
 };
 
 // UI Logic
+function displayIn(event) {
+  event.preventDefault();
+  const sizeInput = document.getElementById("size").value;
+  const chickenInput = document.getElementById("chicken").value;
+  const pineInput = document.getElementById("pine").value;
+  const cheeseInput = document.getElementById("cheese").value;
+  const oilInput = document.getElementById("oil").value;
+  const eggsInput = document.getElementById("eggs").value;
+  const fishInput = document.getElementById("fish").value;
+}
 
 // Console Testing
 let onePizza = new Pizza("small", ["eggs"])
