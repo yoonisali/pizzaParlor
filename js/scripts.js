@@ -12,11 +12,11 @@ function Pizza(size, toppings) {
 Pizza.prototype.calcSizePrice = function () {
   let price = 0;
   if (this.size === "small") {
-    price += 22.99;
+    price = 22.99;
   } else if (this.size === "medium") {
-    price += 33.99;
+    price = 33.99;
   } else if (this.size === "large") {
-    price += 44.99;
+    price = 44.99;
   }
   this.sizePrice = price;
   return this.sizePrice;
@@ -54,7 +54,7 @@ Pizza.prototype.calcFinalPrice = function (sizePrice, toppingPrice) {
 
 // UI Logic
 function displayIn() {
-  let pizzaSize = document.querySelector(".size").value;
+  let pizzaSize = document.querySelector("input:checked.size").value;
 
   let pizzaToppings = [];
   let toppingInputs = document.querySelectorAll(".topping");
@@ -69,8 +69,8 @@ function displayIn() {
   const orderTopping = pizzaOrder.calcToppingPrice();
   const fullPrice = pizzaOrder.calcFinalPrice(orderSize, orderTopping);
 
-
-  document.getElementById("displayOrder").innerHTML = "Total: " + fullPrice.toFixed(2);
+  document.getElementById("displayOrder").innerHTML =
+    "Total: " + fullPrice.toFixed(2);
 }
 
 const reset = function () {
@@ -86,4 +86,3 @@ window.addEventListener("load", function () {
     });
   document.getElementById("reset-btn").addEventListener("click", reset);
 });
-
