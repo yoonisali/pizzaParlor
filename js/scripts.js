@@ -87,20 +87,3 @@ window.addEventListener("load", function () {
   document.getElementById("reset-btn").addEventListener("click", reset);
 });
 
-// Console Testing
-let onePizza = new Pizza("small", ["eggs"]);
-
-let twoPizza = new Pizza("medium", ["motor-oil", "chicken"]);
-let sizePrice = twoPizza.calcSizePrice();
-let toppingPrice = twoPizza.calcToppingPrice();
-twoPizza.calcFinalPrice(sizePrice, toppingPrice);
-
-let threePizza = new Pizza("large", ["chicken", "pineapples", "cheese"]);
-
-console.log("One pizza: " + onePizza.calcSizePrice());
-// console.log("Two pizzas: " + twoPizza.calcSizePrice());
-console.log("Three pizzas: " + threePizza.calcSizePrice());
-console.log("One pizza topping: " + onePizza.calcToppingPrice());
-console.log("Two pizza toppings: " + twoPizza.calcToppingPrice());
-console.log("Three pizza toppings: " + threePizza.calcToppingPrice());
-// console.log("Three pizza toppings: " + twoPizza.calcFinalPrice());
