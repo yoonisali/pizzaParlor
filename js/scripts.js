@@ -70,7 +70,7 @@ function displayIn() {
   const fullPrice = pizzaOrder.calcFinalPrice(orderSize, orderTopping);
 
   document.getElementById("displayOrder").innerHTML =
-    "Total: " + fullPrice.toFixed(2);
+    "Total: $" + fullPrice.toFixed(2);
 }
 
 const reset = function () {
