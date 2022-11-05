@@ -14,3 +14,4 @@ Test: Test: "It should log the price of the toppings on the pizza"
 Code: let myPizza = new Pizza("medium", ["eggs", "cheese", "fish"]);
       myPizza.toppingPrice();
 Expected Output: 18;
+```
