@@ -25,32 +25,36 @@
       <div class="form-group">
         <h3>Pizza Size:</h3>
         <div id="size">
-          <input type="checkbox" name="size" value="small"> Small $22.99
+          <input type="radio" class="size" name="size" value="small"> Small $22.99
           <br>
           <br>
-          <input type="checkbox" name="size" value="medium"> Medium $33.99
+          <input type="radio" class="size" name="size" value="medium"> Medium $33.99
           <br>
           <br>
-          <input type="checkbox" name="size" value="large"> Large $44.99
+          <input type="radio" class="size" name="size" value="large"> Large $44.99
         </div>
       </div>
       <div class="form-group">
         <h3>Pizza Toppings</h3>
         <p>6$ each</p>
-        <input id="chicken" type="checkbox" name="toppings" value="chicken"> Grilled Chicken
+        <input id="chicken" type="checkbox" class="topping" name="toppings" value="chicken"> Grilled Chicken
         <br>
-        <input id="pine" type="checkbox" name="toppings" value="pineapples"> Pineapples
+        <input id="pine" type="checkbox" class="topping" name="toppings" value="pineapples"> Pineapples
         <br>
-        <input id="cheese" type="checkbox" name="toppings" value="cheese"> Extra Cheese
+        <input id="cheese" type="checkbox" class="topping" name="toppings" value="cheese"> Extra Cheese
         <br>
-        <input id="oil" type="checkbox" name="toppings" value="motor-oil"> Motor Oil
+        <input id="oil" type="checkbox" class="topping" name="toppings" value="motor-oil"> Motor Oil
         <br>
-        <input id="eggs" type="checkbox" name="toppings" value="eggs"> Eggs
+        <input id="eggs" type="checkbox" class="topping" name="toppings" value="eggs"> Eggs
         <br>
-        <input id="fish" type="checkbox" name="toppings" value="fish"> Fish eyes
+        <input id="fish" type="checkbox" class="topping" name="toppings" value="fish"> Fish eyes
         <br>
       </div>
-      <button type="submit" class="btn btn-light" id="order">Place your order!</button>
+      <h1 id="displayOrder"></h1>
+      <div>
+        <button type="submit" class="btn btn-light" id="order">Place your order!</button>
+        <button class="btn btn-warning ml-4" type="reset" id="reset-btn">Reset</button>
+      </div>
     </form>
   </div>
 </body>
